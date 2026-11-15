@@ -1,101 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Manage landing page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Manage landing page</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <body class="font-vietnam text-base antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only"
+      >Skip to content</a
+    >
+    <header class="flex justify-between items-center py-6" role="banner">
+      <a href="#" aria-label="Manage homepage"
+        ><img src="images/logo.svg" alt="Manage" id="logo"
+      /></a>
+      <div id="menu-backdrop" class="hidden" aria-hidden="true"></div>
+      <button
+        class="md:hidden"
+        type="button"
+        id="primary-btn"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open menu"
+      >
+        <img
+          src="images/icon-hamburger.svg"
+          alt="Open menu"
+          aria-hidden="true"
+        />
+      </button>
 
-</head>
+      <nav
+        class="hidden md:flex justify-between items-center py-6"
+        id="primary-nav"
+        aria-label="Primary navigation"
+      >
+        <ul class="flex space-x-6">
+          <li><a href="#" class="font-medium text-sm">Pricing</a></li>
+          <li><a href="#" class="font-medium text-sm">Product</a></li>
+          <li><a href="#" class="font-medium text-sm">About Us</a></li>
+          <li><a href="#" class="font-medium text-sm">Careers</a></li>
+          <li><a href="#" class="font-medium text-sm">Community</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="hidden md:inline-block btn-primary">
+        Get Started
+      </button>
+    </header>
 
-<body class="font-vietnam text-base antialiased">
+    <main id="main-content">
+      <section aria-labelledby="hero-title">
+        <img src="images/illustration-intro.svg" alt="statistics" />
+        <h1 id="hero-title">
+          Bring everyone together to build better products.
+        </h1>
+        <p>
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view.
+        </p>
+        <button type="button">Get Started</button>
+      </section>
+      <section aria-labelledby="features-title">
+        <h2 id="features-title">What’s different about Manage?</h2>
+        <p>
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams.
+        </p>
+        <ol>
+          <li>
+            <span aria-hidden="true">01</span>
+            <h3>Track company-wide progress</h3>
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </li>
+          <li>
+            <span aria-hidden="true">02</span>
+            <h3>Advanced built-in reports</h3>
+            <p>
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </li>
+          <li>
+            <span aria-hidden="true">03</span>
+            <h3>Everything you need in one place</h3>
+            <p>
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section
+        id="testimonials"
+        aria-labelledby="testimonials-title"
+        aria-roledescription="carousel"
+        role="region"
+        aria-label="Customer testimonials"
+      >
+        <h2 id="testimonials-title">What they’ve said</h2>
+        <article
+          aria-roledescription="slide"
+          aria-label="1 of 4 anisha Li"
+          id="slide-1-anisha-li"
+        >
+          <img src="images/avatar-anisha.png" alt="Anisha Li" />
+          <h3>Anisha Li</h3>
+          <blockquote>
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps everyone
+            motivated.”
+          </blockquote>
+        </article>
 
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
+        <article
+          aria-roledescription="slide"
+          aria-label="2 of 4 ali bravo"
+          id="slide-2-ali-bravo"
+        >
+          <img src="images/avatar-ali.png" alt="Ali Bravo" />
+          <h3>Ali Bravo</h3>
+          <blockquote>
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </blockquote>
+        </article>
+        <article
+          aria-roledescription="slide"
+          aria-label="3 of 4 richard watts"
+          id="slide-3-richard-watts"
+        >
+          <img src="images/avatar-richard.png" alt="Richard Watts" />
+          <h3>Richard Watts</h3>
+          <blockquote>
+            “Manage allows us to provide structure and process. It keeps us
+            organized and focused. I can’t stop recommending them to everyone I
+            talk to!”
+          </blockquote>
+        </article>
+        <article
+          aria-roledescription="slide"
+          aria-label="4 of 4 shanai gough"
+          id="slide-4-shanai-gough"
+        >
+          <img src="images/avatar-shanai.png" alt="Shanai Gough" />
+          <h3>Shanai Gough</h3>
+          <blockquote>
+            “Their software allows us to track, manage and collaborate on our
+            projects from anywhere. It keeps the whole team in-sync without
+            being intrusive.”
+          </blockquote>
+        </article>
+        <div role="tablist" aria-label="Testimonial slides">
+          <button
+            role="tab"
+            type="button"
+            aria-label="Slide 1 of 4: Anisha Li"
+            aria-selected="true"
+            aria-controls="slide-1-anisha-li"
+          ></button>
+          <button
+            role="tab"
+            type="button"
+            aria-label="Slide 2 of 4: Ali Bravo"
+            aria-selected="false"
+            aria-controls="slide-2-ali-bravo"
+          ></button>
+          <button
+            role="tab"
+            type="button"
+            aria-label="Slide 3 of 4: Richard Watts"
+            aria-selected="false"
+            aria-controls="slide-3-richard-watts"
+          ></button>
+          <button
+            role="tab"
+            type="button"
+            aria-label="Slide 4 of 4: Shanai Gough"
+            aria-selected="false"
+            aria-controls="slide-4-shanai-gough"
+          ></button>
+        </div>
+        <button type="button">Get Started</button>
+      </section>
+      <section id="cta" aria-labelledby="cta-title">
+        <h2 id="cta-title">Simplify how your team works today.</h2>
+        <button type="button">Get Started</button>
+      </section>
+    </main>
 
-  Get Started
+    <footer role="contentinfo">
+      <form
+        action=""
+        id="newsletter-form"
+        aria-label="newsletter form"
+        novalidate
+      >
+        <label for="email" class="sr-only"> Updates in your inbox </label>
+        <input
+          aria-invalid="false"
+          aria-describedby="email-error"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Updates in your inbox…"
+        />
 
-  Bring everyone together to build better products.
+        <span id="email-error" role="alert" class="hidden"></span>
+        <button type="submit">Go</button>
+      </form>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="social-links">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="images/icon-facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/icon-youtube.svg" alt="youtube" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/icon-twitter.svg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/icon-pinterest.svg" alt="pinterest"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/icon-instagram.svg" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div aria-label="logo">
+        <img src="images/logo.svg" alt="" aria-hidden="true" />
+      </div>
 
-  Manage makes it simple for software teams to plan day-to-day
-  tasks while keeping the larger team goals in view.
-
-  Get Started
-
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without
-  the complexity. Our software is tailor-made for modern digital
-  product teams.
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from
-  tracking progress at the milestone level all the way done to the
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company
-  goals. Our customisable dashboard helps you build out the reports
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files,
-  track tasks and share documents. Manage offers an all-in-one team
-  productivity solution.
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using
-  Manage. There is no more cross-channel confusion and everyone is much
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
-
-  Get Started
-
-  Simplify how your team works today.
-  Get Started
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
-
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
-
+      <small>Copyright 2026. All Rights Reserved</small>
+      <div id="attribution" aria-label="attribution">
+        <span> Challenge by</span>
+        <a href="https://www.frontendmentor.io?ref=challenge"
+          >Frontend Mentor</a
+        >
+        <span>Coded by</span><a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
 </html>
