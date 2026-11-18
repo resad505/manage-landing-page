@@ -25,41 +25,92 @@
         >Skip to content</a
       >
       <header
-        class="flex justify-between items-center py-6 container"
+        class="relative flex justify-between items-center py-10 container"
         role="banner"
       >
-        <a href="#" aria-label="Manage homepage"
-          ><img src="images/logo.svg" alt="Manage" id="logo"
-        /></a>
-        <div id="menu-backdrop" class="hidden" aria-hidden="true"></div>
+        <a
+          href="#"
+          aria-label="Manage homepage"
+          class="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
+        >
+          <img
+            src="images/logo.svg"
+            alt="Manage"
+            id="logo"
+            width="110"
+            height="18"
+          />
+        </a>
+
+        <div
+          id="menu-backdrop"
+          class="hidden md:hidden z-40 fixed inset-0 bg-gradient-to-b from-transparent to-black/60 transition-opacity"
+          aria-hidden="true"
+        ></div>
+
         <button
-          class="md:hidden"
+          class="md:hidden -mr-2 p-2 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 cursor-pointer"
           type="button"
           id="primary-btn"
           aria-expanded="false"
           aria-controls="primary-nav"
-          aria-label="Open menu"
+          aria-label="Open navigation menu"
         >
           <img
             src="images/icon-hamburger.svg"
-            alt="Open menu"
+            alt=""
             aria-hidden="true"
+            width="25"
+            height="18"
           />
         </button>
 
         <nav
-          class="hidden md:flex justify-between items-center py-6"
+          class="hidden top-24 z-50 md:z-auto md:static fixed inset-x-6 md:inset-auto md:flex md:items-center bg-white md:bg-transparent shadow-2xl md:shadow-none p-8 md:p-0 rounded-md md:text-left text-center"
           id="primary-nav"
           aria-label="Primary navigation"
         >
-          <ul class="flex space-x-6">
-            <li><a href="#" class="font-medium text-sm">Pricing</a></li>
-            <li><a href="#" class="font-medium text-sm">Product</a></li>
-            <li><a href="#" class="font-medium text-sm">About Us</a></li>
-            <li><a href="#" class="font-medium text-sm">Careers</a></li>
-            <li><a href="#" class="font-medium text-sm">Community</a></li>
+          <ul
+            class="flex md:flex-row flex-col md:space-x-8 space-y-6 md:space-y-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 md:font-medium font-bold text-blue-950 hover:text-grayish-blue md:text-sm text-base transition-colors duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 md:font-medium font-bold text-blue-950 hover:text-grayish-blue md:text-sm text-base transition-colors duration-200"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 md:font-medium font-bold text-blue-950 hover:text-grayish-blue md:text-sm text-base transition-colors duration-200"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 md:font-medium font-bold text-blue-950 hover:text-grayish-blue md:text-sm text-base transition-colors duration-200"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 md:font-medium font-bold text-blue-950 hover:text-grayish-blue md:text-sm text-base transition-colors duration-200"
+                >Community</a
+              >
+            </li>
           </ul>
         </nav>
+
         <button type="button" class="hidden md:inline-block btn-primary">
           Get Started
         </button>

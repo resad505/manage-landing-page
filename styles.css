@@ -3,6 +3,7 @@
 @theme {
   --color-orange-400: hsl(12, 88%, 59%);
   --color-blue-950: hsl(228, 39%, 23%);
+  --color-grayish-blue: hsl(227, 12%, 61%);
   --color-gray-950: hsl(233, 12%, 13%);
   --color-orange-50: hsl(13, 100%, 96%);
   --color-gray-50: hsl(0, 0%, 98%);
